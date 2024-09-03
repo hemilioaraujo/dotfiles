@@ -7,6 +7,8 @@ sudo apt install git curl gnome-sushi tree vlc -y;
 
 # install dev-tools
 sudo apt install python3-pip neovim nodejs;
+# install asdf
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf;
 
 pip install pyvim;
 # INSTALA FONTES MS
