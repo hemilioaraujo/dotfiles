@@ -5,6 +5,7 @@ Plug 'preservim/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'jiangmiao/auto-pairs'
+Plug 'sainnhe/sonokai'
 call plug#end()
 
 " Global Sets """""""""
@@ -45,4 +46,4 @@ nmap <C-p> :NERDTreeToggle<CR>
 " autocmd """"""
 " autocmd aqui
 
-
+colorscheme sonokai
