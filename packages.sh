@@ -6,6 +6,7 @@ sudo apt update -y;
 sudo apt install git curl gnome-sushi tree vlc ttf-mscorefonts-installer -y;
 sudo apt install virtualbox virtualbox-guest-additions-iso virtualbox-ext-pack -y;
 sudo usermod -a -G vboxusers $USER;
+sudo snap install code insomnia discord -y;
 
 # install dev-tools
 sudo apt install python3-pip neovim nodejs;
@@ -17,7 +18,19 @@ asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git;
 asdf install nodejs latest;
 asdf global nodejs latest;
 
-sudo snap install code insomnia discord -y;
+# asdf python
+sudo apt install build-essential libssl-dev zlib1g-dev \
+libbz2-dev libreadline-dev libsqlite3-dev curl git \
+libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev -y;
+asdf plugin-add python;
+asdf install python latest;
+asdf global python latest;
+
+# asdf go
+apt install coreutils curl -y;
+asdf plugin add golang https://github.com/asdf-community/asdf-golang.git;
+asdf install golang latest;
+asdf global golang latest;
 
 # install docker
 # remove conflicting packages
