@@ -9,7 +9,7 @@ sudo usermod -a -G vboxusers $USER;
 sudo snap install code insomnia discord -y;
 
 # install dev-tools
-sudo apt install python3-pip neovim nodejs;
+sudo apt install python3-pip neovim nodejs -y;
 # asdf
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf;
 # asdf NodeJs
