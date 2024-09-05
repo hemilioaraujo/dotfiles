@@ -3,7 +3,7 @@
 sudo apt update -y;
 
 # install utils packages
-sudo apt install git curl gnome-sushi tree vlc ttf-mscorefonts-installer -y;
+sudo apt install git curl gnome-sushi tree vlc ttf-mscorefonts-installer stow -y;
 sudo apt install virtualbox virtualbox-guest-additions-iso virtualbox-ext-pack -y;
 sudo usermod -a -G vboxusers $USER;
 sudo snap install code insomnia discord -y;
@@ -31,6 +31,12 @@ apt install coreutils curl -y;
 asdf plugin add golang https://github.com/asdf-community/asdf-golang.git;
 asdf install golang latest;
 asdf global golang latest;
+
+# asdf php
+sudo apt install -y autoconf bison build-essential curl gettext git libgd-dev libcurl4-openssl-dev libedit-dev libicu-dev libjpeg-dev libmysqlclient-dev libonig-dev libpng-dev libpq-dev libreadline-dev libsqlite3-dev libssl-dev libxml2-dev libzip-dev openssl pkg-config re2c zlib1g-dev;
+asdf plugin-add php https://github.com/asdf-community/asdf-php.git;
+asdf install php latest;
+asdf global php latest;
 
 # install docker
 # remove conflicting packages
