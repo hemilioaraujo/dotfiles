@@ -3,7 +3,7 @@
 sudo apt update -y;
 
 # install utils packages
-sudo apt install git curl gnome-sushi tree vlc ttf-mscorefonts-installer stow btop -y;
+sudo apt install git curl gnome-sushi tree vlc ttf-mscorefonts-installer stow btop unzip -y;
 sudo apt install virtualbox virtualbox-guest-additions-iso virtualbox-ext-pack -y;
 sudo usermod -a -G vboxusers $USER;
 sudo snap install code insomnia discord -y;
@@ -27,7 +27,7 @@ asdf install python latest;
 asdf global python latest;
 
 # asdf go
-apt install coreutils curl -y;
+sudo apt install coreutils curl -y;
 asdf plugin add golang https://github.com/asdf-community/asdf-golang.git;
 asdf install golang latest;
 asdf global golang latest;
