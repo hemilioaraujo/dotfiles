@@ -3,7 +3,7 @@
 sudo apt update -y;
 
 # install utils packages
-sudo apt install git curl gnome-sushi tree vlc ttf-mscorefonts-installer stow btop unzip -y;
+sudo apt install git curl gnome-sushi tree vlc ttf-mscorefonts-installer stow btop unzip inkscape -y;
 sudo apt install virtualbox virtualbox-guest-additions-iso virtualbox-ext-pack -y;
 sudo usermod -a -G vboxusers $USER;
 sudo snap install code insomnia discord -y;
