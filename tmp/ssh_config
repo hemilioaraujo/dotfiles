@@ -1,0 +1,4 @@
+Host mobileserver
+    HostName 192.168.0.200
+    User u0_a96
+    Port 8022
