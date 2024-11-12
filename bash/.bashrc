@@ -125,6 +125,8 @@ function cdrepo(){
         cd "$HOME/Documentos/repositorios"
     elif [ -d "$HOME/Documents/repositorios" ]; then
         cd "$HOME/Documents/repositorios"
+    elif [ -d "$HOME/repositorios" ]; then
+        cd "$HOME/repositorios"
     else
         echo "O diretório 'repositorios' não foi encontrado em 'Documentos' nem em 'Documents'."
     fi
