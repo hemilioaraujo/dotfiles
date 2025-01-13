@@ -1,5 +1,10 @@
 # BASH
 alias ~~='cd ~'
+alias -- -='cd -'
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
 alias pingu='ping www.uol.com.br'
 # PHP
 alias pint='vendor/bin/pint'
@@ -39,3 +44,7 @@ alias aptug='sudo apt upgrade'
 alias dcu='docker compose up -d'
 alias dcd='docker compose down'
 alias dps='docker ps'
+
+function mkd() {
+    mkdir -p "$@" && cd "$@"
+}
