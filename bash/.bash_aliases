@@ -38,3 +38,4 @@ alias aptug='sudo apt upgrade'
 # DOCKER
 alias dcu='docker compose up -d'
 alias dcd='docker compose down'
+alias dps='docker ps'
