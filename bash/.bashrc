@@ -121,12 +121,12 @@ fi
 . "$HOME/.asdf/completions/asdf.bash"
 
 function cdrepo(){
-    if [ -d "$HOME/Documentos/repositorios" ]; then
-        cd "$HOME/Documentos/repositorios"
-    elif [ -d "$HOME/Documents/repositorios" ]; then
-        cd "$HOME/Documents/repositorios"
+    if [ -d "$HOME/Documentos/repositorios/$@" ]; then
+        cd "$HOME/Documentos/repositorios/$@"
+    elif [ -d "$HOME/Documents/repositorios/$@" ]; then
+        cd "$HOME/Documents/repositorios/$@"
     elif [ -d "$HOME/repositorios" ]; then
-        cd "$HOME/repositorios"
+        cd "$HOME/repositorios/$@"
     else
         echo "O diretório 'repositorios' não foi encontrado em 'Documentos' nem em 'Documents'."
     fi
