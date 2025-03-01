@@ -40,6 +40,7 @@ alias aptr='sudo apt remove'
 alias apts='sudo apt-cache search'
 alias aptud='sudo apt update'
 alias aptug='sudo apt upgrade'
+alias aptudg='sudo apt update && sudo apt upgrade'
 # DOCKER
 alias dcu='docker compose up -d'
 alias dcd='docker compose down'
