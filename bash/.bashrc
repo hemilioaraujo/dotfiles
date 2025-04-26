@@ -116,20 +116,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-
-function cdrepo(){
-    if [ -d "$HOME/Documentos/repositorios/$@" ]; then
-        cd "$HOME/Documentos/repositorios/$@"
-    elif [ -d "$HOME/Documents/repositorios/$@" ]; then
-        cd "$HOME/Documents/repositorios/$@"
-    elif [ -d "$HOME/repositorios" ]; then
-        cd "$HOME/repositorios/$@"
-    else
-        echo "O diretório 'repositorios' não foi encontrado em 'Documentos' nem em 'Documents'."
-    fi
-}
-
-
 # ASDF settings
 export PATH="$HOME/bin:$PATH"
 export ASDF_DATA_DIR="$HOME/.asdf"
