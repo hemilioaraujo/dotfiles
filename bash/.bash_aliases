@@ -11,6 +11,7 @@ alias pint='vendor/bin/pint'
 alias art='php artisan'
 alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 alias sart='sail artisan'
+alias tinker='php artisan tinker'
 # GIT FLOW
 alias gffs='git flow feature start'
 alias gfff='git flow feature finish'
