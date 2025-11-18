@@ -120,3 +120,4 @@ fi
 export PATH="$HOME/bin:$PATH"
 export ASDF_DATA_DIR="$HOME/.asdf"
 export PATH="$ASDF_DATA_DIR/shims:$PATH"
+eval "$(oh-my-posh init bash)"
