@@ -116,7 +116,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# ASDF settings
+# PATH settings
 export PATH="$HOME/bin:$PATH"
-export ASDF_DATA_DIR="$HOME/.asdf"
+export PATH="$HOME/.local/bin:$PATH"
 export PATH="$ASDF_DATA_DIR/shims:$PATH"
+# ASDF settings
+export ASDF_DATA_DIR="$HOME/.asdf"
+
+eval "$(oh-my-posh init bash)"
