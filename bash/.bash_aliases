@@ -48,6 +48,8 @@ alias dcud='docker compose up -d'
 alias dcd='docker compose down'
 alias dcr='docker compose restart'
 alias dps='docker ps'
+# ANTIGRAVITY ON WSL
+alias ag='antigravity --remote wsl+Ubuntu "$(pwd)"'
 
 function mkd() {
     mkdir -p "$@" && cd "$@"
